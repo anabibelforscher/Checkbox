@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity" >
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textTopo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hey, Dev! Selecione qual área(s) do desenvolvimento você mais gosta:" />
+
+    <CheckBox
+        android:id="@+id/checkMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile" />
+
+    <CheckBox
+        android:id="@+id/checkWeb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Web" />
+
+    <CheckBox
+        android:id="@+id/checkDesktop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Desktop" />
+
+    <CheckBox
+        android:id="@+id/checkIOT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IOT" />
+
+    <Button
+        android:id="@+id/buttonEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="enviar"
+        android:text="Enviar" />
+
+    <Button
+        android:id="@+id/buttonLimpar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="limpar"
+        android:text="Limpar" />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado" />
+</LinearLayout>
